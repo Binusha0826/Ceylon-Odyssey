@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Lanka — An Island Odyssey</title>
+  <meta name="description" content="Experience the cinematic beauty of Sri Lanka. Discover iconic destinations, thrilling experiences, ancient culture, and plan your journey." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Global Full-Page Fixed Video Background Canvas -->
+  <div class="global-canvas-wrap" id="globalBg">
+    <canvas id="canvas"></canvas>
+    <div class="global-canvas-vignette"></div>
+  </div>
+
+  <!-- Persistent Floating Chapter Pill Indicator across the full scroll timeline -->
+  <div class="global-chapter-pill" id="globalChapterPill">
+    <div class="global-chapter-dot"></div>
+    <span id="globalChapterText">Act I: Island Skies & Cloud Descent</span>
+  </div>
+
+  <!-- Loading Bar -->
+  <div id="loader"><div id="progress"></div></div>
+
+  <!-- Luxury Floating Navbar -->
+  <header class="navbar" id="navbar">
+    <a href="#" class="nav-brand">
+      <div class="nav-logo-mark">SL</div>
+      <div class="nav-brand-text">CEYLON <span>ODYSSEY</span></div>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#experiences">Experiences</a></li>
+      <li><a href="#culture">Culture</a></li>
+      <li><a href="#why-sri-lanka">Why Sri Lanka</a></li>
+      <li><a href="#plan-journey">Plan Journey</a></li>
+    </ul>
+
+    <a href="#plan-journey" class="nav-cta js-open-planner">Plan Your Trip</a>
+  </header>
+
+  <!-- ============================================================
+       SECTION 0: HERO INTRO SECTION
+       ============================================================ -->
+  <section class="hero-section" id="hero">
+    <div class="hero-overlay" id="heroOverlay">
+      <div class="hero-eyebrow">A CEYLON ODYSSEY</div>
+      <h1 class="hero-title">Sri Lanka</h1>
+      <p class="hero-subtitle">Scroll down to journey across ancient kingdoms, misty peaks, and tropical shores.</p>
+      <div class="hero-scroll-indicator">
+        <div class="mouse-icon"><div class="mouse-wheel"></div></div>
+        <span>Scroll to Explore</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 1: EXPLORE SRI LANKA – DESTINATIONS
+       ============================================================ -->
+  <section class="section-wrapper" id="destinations">
+    <div class="section-header reveal">
+      <div class="section-tag">Iconic Landscapes</div>
+      <h2 class="section-title">Explore the Beauty of Sri Lanka</h2>
+      <p class="section-desc">From ancient kingdoms to misty mountains and tropical coastlines, discover the incredible places that make Sri Lanka truly unique.</p>
+    </div>
+
+    <div class="destinations-grid">
+      <!-- Sigiriya -->
+      <article class="destination-card reveal delay-1">
+        <div class="destination-img-box">
+          <img class="destination-img" src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1200&q=80" alt="Sigiriya Lion Rock Sri Lanka" loading="lazy" />
+          <div class="destination-gradient"></div>
+        </div>
+        <div class="destination-badge">Cultural Triangle</div>
+        <div class="destination-content">
+          <div class="destination-region">Ancient Wonder</div>
+          <h3 class="destination-name">Sigiriya</h3>
+          <p class="destination-desc">Discover the legendary Lion Rock and its ancient history.</p>
+          <span class="destination-link">
+            Explore Citadel
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Ella -->
+      <article class="destination-card reveal delay-2">
+        <div class="destination-img-box">
+          <img class="destination-img" src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=1200&q=80" alt="Ella Nine Arch Bridge Sri Lanka" loading="lazy" />
+          <div class="destination-gradient"></div>
+        </div>
+        <div class="destination-badge">Central Highlands</div>
+        <div class="destination-content">
+          <div class="destination-region">Misty Hills</div>
+          <h3 class="destination-name">Ella</h3>
+          <p class="destination-desc">Experience breathtaking mountain views and scenic train journeys.</p>
+          <span class="destination-link">
+            Discover Valleys
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Mirissa -->
+      <article class="destination-card reveal delay-3">
+        <div class="destination-img-box">
+          <img class="destination-img" src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=80" alt="Mirissa Beach Coastline Sri Lanka" loading="lazy" />
+          <div class="destination-gradient"></div>
+        </div>
+        <div class="destination-badge">Southern Coast</div>
+        <div class="destination-content">
+          <div class="destination-region">Ocean Haven</div>
+          <h3 class="destination-name">Mirissa</h3>
+          <p class="destination-desc">Relax on golden beaches and enjoy the tropical coastline.</p>
+          <span class="destination-link">
+            Unwind Shores
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Adam's Peak -->
+      <article class="destination-card reveal delay-4">
+        <div class="destination-img-box">
+          <img class="destination-img" src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=1200&q=80" alt="Adam's Peak Sri Pada Sunrise" loading="lazy" />
+          <div class="destination-gradient"></div>
+        </div>
+        <div class="destination-badge">Sacred Peak</div>
+        <div class="destination-content">
+          <div class="destination-region">Spiritual Summit</div>
+          <h3 class="destination-name">Adam's Peak</h3>
+          <p class="destination-desc">Witness a spectacular sunrise above the clouds.</p>
+          <span class="destination-link">
+            Ascend Summit
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2: EXPERIENCES & ADVENTURES
+       ============================================================ -->
+  <section class="section-wrapper" id="experiences">
+    <div class="section-header reveal">
+      <div class="section-tag">Unforgettable Encounters</div>
+      <h2 class="section-title">Experiences You'll Never Forget</h2>
+      <p class="section-desc">Make every moment extraordinary with experiences that bring you closer to the beauty, culture, and adventure of Sri Lanka.</p>
+    </div>
+
+    <div class="experiences-grid">
+      <!-- 1. Wildlife Safaris -->
+      <div class="experience-card reveal delay-1">
+        <div class="experience-media">
+          <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1000&q=80" alt="Wildlife Safaris Sri Lanka" loading="lazy" />
+          <div class="experience-overlay"></div>
+          <div class="experience-tag">Safari</div>
+        </div>
+        <div class="experience-body">
+          <div>
+            <h3 class="experience-title">Wildlife Safaris</h3>
+            <p class="experience-desc">Encounter wild Asian elephants roaming freely across untamed reserves and track elusive leopards in world-renowned Yala and Udawalawe national parks.</p>
+          </div>
+          <div class="experience-footer">
+            <span>Nature & Wildlife</span>
+            <span>Guided 4x4</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Scenic Train Journeys -->
+      <div class="experience-card reveal delay-2">
+        <div class="experience-media">
+          <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=1000&q=80" alt="Scenic Train Journeys Sri Lanka" loading="lazy" />
+          <div class="experience-overlay"></div>
+          <div class="experience-tag">Rail Odyssey</div>
+        </div>
+        <div class="experience-body">
+          <div>
+            <h3 class="experience-title">Scenic Train Journeys</h3>
+            <p class="experience-desc">Board the classic blue train winding through emerald tea valleys, misty mountain curves, and majestic colonial stone bridges like the legendary Nine Arches.</p>
+          </div>
+          <div class="experience-footer">
+            <span>Scenic Route</span>
+            <span>Kandy to Ella</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Beach Adventures -->
+      <div class="experience-card reveal delay-3">
+        <div class="experience-media">
+          <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1000&q=80" alt="Beach Adventures Sri Lanka" loading="lazy" />
+          <div class="experience-overlay"></div>
+          <div class="experience-tag">Ocean & Surf</div>
+        </div>
+        <div class="experience-body">
+          <div>
+            <h3 class="experience-title">Beach Adventures</h3>
+            <p class="experience-desc">Catch pristine point breaks in Arugam Bay and Weligama, dive vibrant coral gardens, or sail into the deep blue on sunrise whale-watching expeditions.</p>
+          </div>
+          <div class="experience-footer">
+            <span>Coastal Waters</span>
+            <span>Year-round</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Mountain Hiking -->
+      <div class="experience-card reveal delay-4">
+        <div class="experience-media">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" alt="Mountain Hiking Sri Lanka" loading="lazy" />
+          <div class="experience-overlay"></div>
+          <div class="experience-tag">Trekking</div>
+        </div>
+        <div class="experience-body">
+          <div>
+            <h3 class="experience-title">Mountain Hiking</h3>
+            <p class="experience-desc">Trek through cloud-covered crests in the Knuckles Mountain Range, Horton Plains World’s End precipice, and panoramic paths surrounded by cascading waterfalls.</p>
+          </div>
+          <div class="experience-footer">
+            <span>Highland Trails</span>
+            <span>Moderate / High</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Tea Plantation Tours -->
+      <div class="experience-card reveal delay-5">
+        <div class="experience-media">
+          <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1000&q=80" alt="Tea Plantation Tours Sri Lanka" loading="lazy" />
+          <div class="experience-overlay"></div>
+          <div class="experience-tag">Heritage Taste</div>
+        </div>
+        <div class="experience-body">
+          <div>
+            <h3 class="experience-title">Tea Plantation Tours</h3>
+            <p class="experience-desc">Wander rolling tea hills in Nuwara Eliya, observe the delicate art of artisanal plucking, and sample world-famous single-origin Pure Ceylon teas.</p>
+          </div>
+          <div class="experience-footer">
+            <span>Hill Country</span>
+            <span>Artisan Tastings</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Cultural Experiences -->
+      <div class="experience-card reveal delay-6">
+        <div class="experience-media">
+          <img src="https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?auto=format&fit=crop&w=1000&q=80" alt="Cultural Experiences Sri Lanka" loading="lazy" />
+          <div class="experience-overlay"></div>
+          <div class="experience-tag">Living Tradition</div>
+        </div>
+        <div class="experience-body">
+          <div>
+            <h3 class="experience-title">Cultural Experiences</h3>
+            <p class="experience-desc">Witness sacred evening rituals at the Temple of the Tooth, traditional rhythmic drumming, energetic Kandyan dances, and spiritual village ceremonies.</p>
+          </div>
+          <div class="experience-footer">
+            <span>Spiritual Roots</span>
+            <span>Sacred Sites</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3: SRI LANKAN CULTURE & HERITAGE
+       ============================================================ -->
+  <section class="section-wrapper" id="culture">
+    <div class="section-header reveal">
+      <div class="section-tag">Timeless Living Legacy</div>
+      <h2 class="section-title">Experience the Heart of Sri Lanka</h2>
+      <p class="section-desc">Discover a land rich in traditions, ancient heritage, warm hospitality, and unforgettable flavours. Experience the authentic lifestyle of Sri Lanka.</p>
+    </div>
+
+    <div class="culture-grid">
+      <!-- 1. Ancient Heritage & Temples -->
+      <article class="culture-item reveal delay-1">
+        <div class="culture-img-box">
+          <img class="culture-img" src="https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?auto=format&fit=crop&w=1200&q=80" alt="Ancient Heritage and Temples Sri Lanka" loading="lazy" />
+        </div>
+        <div class="culture-content">
+          <div class="culture-number">01 / HISTORIC REALMS</div>
+          <h3 class="culture-title">Ancient Heritage & Temples</h3>
+          <p class="culture-desc">Explore sacred monastic cities spanning over 2,500 years of documented history. From the monumental white stupas of Anuradhapura and royal ruins of Polonnaruwa to the sacred painted caves of Dambulla, ancient wisdom echoes through stone.</p>
+        </div>
+      </article>
+
+      <!-- 2. Traditional Festivals -->
+      <article class="culture-item reveal delay-2">
+        <div class="culture-img-box">
+          <img class="culture-img" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80" alt="Traditional Festivals Sri Lanka" loading="lazy" />
+        </div>
+        <div class="culture-content">
+          <div class="culture-number">02 / LIVING FAITH</div>
+          <h3 class="culture-title">Traditional Festivals</h3>
+          <p class="culture-desc">Experience the mesmerizing spectacle of the Kandy Esala Perahera with flame dancers and ornate processions, or marvel at Vesak night when every city and village glows under millions of radiant handmade paper lanterns.</p>
+        </div>
+      </article>
+
+      <!-- 3. Authentic Sri Lankan Cuisine -->
+      <article class="culture-item reveal delay-3">
+        <div class="culture-img-box">
+          <img class="culture-img" src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=1200&q=80" alt="Authentic Sri Lankan Cuisine" loading="lazy" />
+        </div>
+        <div class="culture-content">
+          <div class="culture-number">03 / CULINARY ART</div>
+          <h3 class="culture-title">Authentic Sri Lankan Cuisine</h3>
+          <p class="culture-desc">A celebration of flavor rooted in pure Ceylon cinnamon, fragrant cardamom, fresh coconut milk, and fiery roasted spices. Savor crisp egg hoppers at daybreak, freshly caught clay pot fish curries, and sizzling rhythmic street-side kottu.</p>
+        </div>
+      </article>
+
+      <!-- 4. Local Arts & Crafts -->
+      <article class="culture-item reveal delay-4">
+        <div class="culture-img-box">
+          <img class="culture-img" src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80" alt="Local Arts & Crafts Sri Lanka" loading="lazy" />
+        </div>
+        <div class="culture-content">
+          <div class="culture-number">04 / TIMELESS CRAFTS</div>
+          <h3 class="culture-title">Local Arts & Crafts</h3>
+          <p class="culture-desc">Generations of master artisans continue historic traditions: expressive hand-carved Ambalangoda wooden masks, vibrant wax batik tapestries, delicate brassware, and handcrafted gem jewelry forged from the world's finest Ceylon sapphires.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4: WHY VISIT SRI LANKA
+       ============================================================ -->
+  <section class="section-wrapper" id="why-sri-lanka">
+    <div class="why-section-inner">
+      <div class="section-header reveal">
+        <div class="section-tag">The Wonder of Ceylon</div>
+        <h2 class="section-title">One Island. Endless Discoveries.</h2>
+        <p class="section-desc">A small island with a world of experiences. From golden beaches and lush green mountains to incredible wildlife and timeless heritage, Sri Lanka offers something extraordinary for every traveller.</p>
+      </div>
+
+      <!-- 5 Highlight Pillars -->
+      <div class="why-features-grid">
+        <!-- 1. Diverse Landscapes -->
+        <div class="why-card reveal delay-1">
+          <div class="why-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3l4 8 5-5 5 15H2L8 3z"/></svg>
+          </div>
+          <h3 class="why-card-title">Diverse Landscapes</h3>
+          <p class="why-card-desc">Transition effortlessly from tropical palm shores to misty tea mountains and arid savannas within a few scenic hours.</p>
+        </div>
+
+        <!-- 2. Rich Cultural Heritage -->
+        <div class="why-card reveal delay-2">
+          <div class="why-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M10 11h4M10 15h4"/></svg>
+          </div>
+          <h3 class="why-card-title">Rich Cultural Heritage</h3>
+          <p class="why-card-desc">An uninterrupted living civilization spanning over two millennia, preserved in rock citadels, sacred stupas, and royal palaces.</p>
+        </div>
+
+        <!-- 3. Incredible Wildlife -->
+        <div class="why-card reveal delay-3">
+          <div class="why-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 0-4 4c0 3 4 8 4 8s4-5 4-8a4 4 0 0 0-4-4z"/><circle cx="12" cy="6" r="1.5"/></svg>
+          </div>
+          <h3 class="why-card-title">Incredible Wildlife</h3>
+          <p class="why-card-desc">One of the world's greatest biodiversity hotspots with abundant wild elephant gatherings, leopards, and giant blue whales.</p>
+        </div>
+
+        <!-- 4. Beautiful Tropical Beaches -->
+        <div class="why-card reveal delay-4">
+          <div class="why-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20c4-2 8-2 12 0s8 2 12 0M2 15c4-2 8-2 12 0s8 2 12 0M12 3v9"/></svg>
+          </div>
+          <h3 class="why-card-title">Tropical Beaches</h3>
+          <p class="why-card-desc">Over 1,300 km of sun-drenched golden shorelines, secluded bays, and warm turquoise waves perfect for year-round relaxation.</p>
+        </div>
+
+        <!-- 5. Warm Sri Lankan Hospitality -->
+        <div class="why-card reveal delay-5">
+          <div class="why-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 class="why-card-title">Warm Hospitality</h3>
+          <p class="why-card-desc">Genuine Ayubowan welcomes, heartfelt smiles, and timeless generosity that turns every traveler into lifelong family.</p>
+        </div>
+      </div>
+
+      <!-- Curated Authentic Heritage Metrics Strip -->
+      <div class="metrics-strip reveal">
+        <div class="metric-item">
+          <div class="metric-number">8</div>
+          <div class="metric-label">UNESCO World Heritage Sites</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number">1,340<span style="font-size: 26px; color: var(--accent-gold);">km</span></div>
+          <div class="metric-label">Pristine Tropical Coastline</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number">26</div>
+          <div class="metric-label">Protected National Wildlife Parks</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number">2,500<span style="font-size: 26px; color: var(--accent-gold);">+</span></div>
+          <div class="metric-label">Years of Recorded Civilization</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5: PLAN YOUR JOURNEY (Transparent to Reveal Video)
+       ============================================================ -->
+  <section class="plan-journey-section" id="plan-journey">
+    <div class="plan-content-box reveal">
+      <div class="section-tag" style="background: rgba(229, 184, 105, 0.15);">Begin Your Exploration</div>
+      <h2 class="plan-heading">Your Sri Lankan Adventure Starts Here</h2>
+      <p class="plan-desc">Whether you're dreaming of a relaxing beach escape, an adventurous mountain journey, or a cultural exploration, let us help you create memories that last a lifetime.</p>
+      
+      <button class="plan-cta-btn js-open-planner">
+        <span>Start Exploring Sri Lanka</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       INTERACTIVE JOURNEY PLANNER MODAL
+       ============================================================ -->
+  <div class="modal-backdrop" id="plannerModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close Modal">✕</button>
+      
+      <div id="modalFormContainer">
+        <h3 class="modal-title" id="modalTitle">Design Your Sri Lankan Journey</h3>
+        <p class="modal-subtitle">Tell us what inspires you, and we’ll curate a bespoke island itinerary crafted just for you.</p>
+
+        <form id="plannerForm">
+          <div class="form-group">
+            <label class="form-label">Preferred Travel Style</label>
+            <div class="form-chips">
+              <button type="button" class="chip-btn active">Cultural & Heritage</button>
+              <button type="button" class="chip-btn">Wildlife & Safari</button>
+              <button type="button" class="chip-btn">Highland Adventure</button>
+              <button type="button" class="chip-btn">Coastal Relaxation</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Ideal Journey Duration</label>
+            <div class="form-chips">
+              <button type="button" class="chip-btn">7 Days</button>
+              <button type="button" class="chip-btn active">10 Days</button>
+              <button type="button" class="chip-btn">14 Days</button>
+              <button type="button" class="chip-btn">3+ Weeks</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="plannerName">Your Full Name</label>
+            <input type="text" id="plannerName" class="form-control" placeholder="e.g. Eleanor Vance" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="plannerEmail">Email Address</label>
+            <input type="email" id="plannerEmail" class="form-control" placeholder="eleanor@example.com" required />
+          </div>
+
+          <button type="submit" class="modal-submit-btn">Request Custom Itinerary</button>
+        </form>
+
+        <div id="formSuccessMsg" style="display: none; text-align: center; padding: 30px 10px;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(16, 185, 129, 0.2); border: 1px solid var(--accent-emerald); color: var(--accent-emerald); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 26px;">✓</div>
+          <h4 style="font-family: var(--font-serif); font-size: 22px; color: #fff; margin-bottom: 8px;">Ayubowan! We have received your request.</h4>
+          <p style="color: var(--text-secondary); font-size: 14px;">Our Ceylon travel specialist will contact you within 24 hours with a personalized itinerary proposal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       LUXURY FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div>
+        <div class="nav-brand">
+          <div class="nav-logo-mark">SL</div>
+          <div class="nav-brand-text">CEYLON <span>ODYSSEY</span></div>
+        </div>
+        <p class="footer-brand-desc">Curating bespoke cinematic journeys through the Pearl of the Indian Ocean. Ancient kingdoms, emerald highlands, and pristine tropical shores.</p>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Destinations</h4>
+        <ul class="footer-links">
+          <li><a href="#destinations">Sigiriya Rock</a></li>
+          <li><a href="#destinations">Ella Highlands</a></li>
+          <li><a href="#destinations">Mirissa Coastline</a></li>
+          <li><a href="#destinations">Adam's Peak</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Experiences</h4>
+        <ul class="footer-links">
+          <li><a href="#experiences">Wildlife Safaris</a></li>
+          <li><a href="#experiences">Scenic Train Journeys</a></li>
+          <li><a href="#experiences">Beach Adventures</a></li>
+          <li><a href="#experiences">Tea Estate Tastings</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Travel Inspiration</h4>
+        <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;">Subscribe for curated seasonal guides, insider trails, and private villa recommendations.</p>
+        <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Ceylon Odyssey!');">
+          <input type="email" class="footer-input" placeholder="Your email address" required />
+          <button type="submit" class="footer-btn">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Ceylon Odyssey. All rights reserved. Crafted for extraordinary Sri Lankan travel.</div>
+      <div style="display: flex; gap: 20px;">
+        <a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
+        <a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Exploration</a>
+        <a href="#" style="color: var(--text-muted); text-decoration: none;">Contact Concierge</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
