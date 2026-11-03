@@ -1,165 +1,123 @@
-# 🌴 Ceylon Odyssey
-### One Island. Endless Discoveries.
+# 🌴 Ceylon Odyssey – Discover the Wonder of Sri Lanka
 
 <p align="center">
-  <strong>A Cinematic Journey Through the Pearl of the Indian Ocean 🇱🇰</strong>
+  <strong>One Island. Endless Discoveries.</strong>
 </p>
 
 <p align="center">
-  <a href="https://ceylon-odyssey-website.vercel.app/">
-    <img src="https://img.shields.io/badge/LIVE%20DEMO-Visit%20Website-D4AF37?style=for-the-badge" />
+  A cinematic travel experience designed to showcase the beauty, culture, heritage, and unforgettable destinations of Sri Lanka.
+</p>
+
+<p align="center">
+  <a href="https://ceylon-odyssey-site.vercel.app/">
+    <strong>🌐 Explore the Live Website</strong>
   </a>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 </p>
 
 ---
 
-## 🌏 About The Project
+## ✨ About the Project
 
-**Ceylon Odyssey** is an immersive cinematic travel website created to showcase the breathtaking landscapes, rich cultural heritage, and unforgettable experiences of Sri Lanka.
+**Ceylon Odyssey** is a modern, cinematic travel website that celebrates the incredible beauty of Sri Lanka.
 
-Instead of a traditional tourism website, it offers an interactive visual journey powered by scroll-controlled animations and cinematic storytelling.
+The project combines immersive visual storytelling, smooth scroll-based animations, elegant layouts, and interactive elements to create an engaging digital journey through the island.
 
-From ancient historical landmarks and misty mountain ranges to golden beaches and vibrant cultural destinations, Ceylon Odyssey brings the beauty of Sri Lanka to life through an engaging digital experience.
+From the ancient wonders of Sigiriya to the scenic landscapes of Ella and the beautiful beaches of Mirissa, Ceylon Odyssey helps visitors explore Sri Lanka through an immersive web experience.
 
-## 🎬 Live Website
+## 🚀 Key Features
 
-🌐 **Explore the website:** https://ceylon-odyssey-website.vercel.app/
+- 🎬 **Cinematic Scroll Animation** – A continuous, scroll-controlled visual experience that brings the journey to life.
+- 🏝️ **Explore Destinations** – Discover iconic Sri Lankan destinations including Sigiriya, Ella, Mirissa, and Adam's Peak.
+- 🌿 **Experiences & Adventures** – Explore wildlife safaris, scenic train journeys, beaches, hiking, and tea plantations.
+- 🏛️ **Culture & Heritage** – Discover Sri Lanka's history, traditions, architecture, and cultural identity.
+- ✨ **Premium Visual Design** – Modern layouts, elegant typography, glassmorphism-inspired elements, and cinematic visuals.
+- 🧭 **Interactive Journey Planner** – Explore travel options through an interactive planning experience.
+- 📱 **Responsive Design** – Designed to provide a smooth experience across different screen sizes.
 
-## ✨ Key Features
+## 🛠️ Technologies Used
 
-- 🎥 **Cinematic Scroll Experience** – A unique scroll-controlled visual journey.
-- 🖼️ **300-Frame Animation** – Canvas-based rendering of sequential image frames.
-- 🌍 **Full-Page Video-Style Background** – Continuous background animation synchronized with the entire page scroll.
-- 🏝️ **Destination Discovery** – Explore iconic Sri Lankan destinations.
-- 🧭 **Interactive Journey Planner** – A custom travel planning modal with interactive selections.
-- 🎭 **Cultural Experiences** – Discover Sri Lankan traditions and heritage.
-- 🌿 **Adventure Exploration** – Wildlife, mountain adventures, scenic train journeys, and beaches.
-- ✨ **Scroll Reveal Animations** – Smooth section and content entrance effects.
-- 📱 **Responsive Layout** – Designed for desktop, tablet, and mobile screens.
-- 🎨 **Premium Visual Design** – Elegant typography, cinematic photography, and sophisticated styling.
-
-## 🏞️ Explore Sri Lanka
-
-Discover some of the island's most iconic destinations:
-
-| Destination | Experience |
+| Technology | Purpose |
 |---|---|
-| Sigiriya | Ancient rock fortress and history |
-| Ella | Misty mountains and scenic train journeys |
-| Mirissa | Beautiful tropical coastline |
-| Adam's Peak | Sacred mountain and sunrise views |
-| Kandy | Cultural heritage and traditions |
-| Galle Fort | Historic architecture and coastal charm |
+| HTML5 | Website structure |
+| CSS3 | Styling, layouts, transitions, and animations |
+| JavaScript (ES6+) | Interactive functionality |
+| HTML5 Canvas API | Cinematic frame-based animation |
+| requestAnimationFrame() | Smooth animation rendering |
+| Intersection Observer API | Scroll-based section interactions |
+| Node.js | Local development server |
+| Google Fonts | Typography |
+| Git & GitHub | Version control and collaboration |
+| Vercel | Website deployment |
 
-## 🧭 Website Sections
+## 🎨 Design Highlights
 
-1. **Discover Sri Lanka** – Cinematic introduction to the island.
-2. **Explore Destinations** – Discover iconic travel destinations.
-3. **Experiences & Adventures** – Explore unforgettable activities.
-4. **Culture & Heritage** – Experience authentic Sri Lankan culture.
-5. **Why Visit Sri Lanka** – Discover what makes the island special.
-6. **Plan Your Journey** – Interactive travel planning experience.
+- Cinematic visual storytelling
+- Smooth scrolling experience
+- Full-page background animation
+- Modern typography and spacious layouts
+- Transparent glass-style content cards
+- Elegant navigation and footer design
+- Travel-inspired visual identity
 
-## 🛠️ Technology Stack
+## 📸 Website Sections
 
-### Core Technologies
-- HTML5
-- CSS3
-- Vanilla JavaScript (ES6+)
+1. **Discover Sri Lanka** – An immersive introduction to the island.
+2. **Explore Destinations** – Discover beautiful places across Sri Lanka.
+3. **Experiences & Adventures** – Find unique travel experiences.
+4. **Culture & Heritage** – Explore the island's rich cultural identity.
+5. **Why Visit Sri Lanka** – Discover what makes Sri Lanka special.
+6. **Plan Your Journey** – Start planning your next adventure.
 
-### Animation & Rendering
-- HTML5 Canvas API
-- JavaScript `requestAnimationFrame()`
-- Scroll-based frame synchronization
-- Intersection Observer API
-- CSS Transitions & Animations
+## 💻 Getting Started
 
-### Typography
-- Google Fonts
-- Cinzel
-- Plus Jakarta Sans
+To run the project locally:
 
-### Development & Deployment
-- Node.js built-in HTTP module
-- Custom Node.js development server
-- Git & GitHub
-- Vercel
-
-## ⚙️ How The Cinematic Animation Works
-
-One of the main highlights of Ceylon Odyssey is its scroll-controlled background animation.
-
-The website uses 300 sequential JPEG frames rendered through the HTML5 Canvas API.
-
-As visitors scroll through the page:
-
-1. JavaScript calculates the overall document scroll progress.
-2. The scroll position is mapped to the corresponding animation frame.
-3. `requestAnimationFrame()` smoothly updates the rendered frame.
-4. The Canvas API displays the selected image.
-5. The animation continues across the entire website.
-
-This creates a continuous cinematic storytelling experience without relying on a conventional video player.
-
-## 💻 Run Locally
-
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Binusha0826/Ceylon-Odyssey.git
 ```
 
-### 2. Navigate to the Project
+### 2. Navigate to the project folder
 
 ```bash
 cd Ceylon-Odyssey
 ```
 
-### 3. Start the Development Server
+### 3. Run the website
+
+If Node.js is installed, run:
 
 ```bash
 node serve.js
 ```
 
-### 4. Open in Browser
+Then open the local address displayed in your terminal.
 
-```text
-http://localhost:3000
-```
+## 🌐 Live Demo
 
-**Note:** Make sure Node.js is installed and the `Travel` directory containing the animation frames is present.
+Experience the website:
 
-## 📁 Project Structure
+**[https://ceylon-odyssey-site.vercel.app/](https://ceylon-odyssey-site.vercel.app/)**
 
-```text
-Ceylon-Odyssey/
-│
-├── Travel/
-│   └── Sequential animation frames
-│
-├── index.html
-├── style.css
-├── script.js
-├── serve.js
-└── README.md
-```
+## 📂 Repository
 
-## 🎯 Project Vision
+**GitHub:** [Binusha0826/Ceylon-Odyssey](https://github.com/Binusha0826/Ceylon-Odyssey)
 
-The vision behind Ceylon Odyssey is to transform the way people experience travel destinations online.
+## 🎯 Project Goal
 
-By combining modern frontend technologies, creative animation techniques, and cinematic storytelling, the project aims to inspire travellers worldwide to discover the extraordinary beauty of Sri Lanka.
+The goal of Ceylon Odyssey is to create more than just a travel website. It aims to present Sri Lanka as a beautiful destination through immersive digital storytelling and modern web technologies.
+
+## 👨‍💻 Developer
+
+**Developed by Binusha**
+
+GitHub: [@Binusha0826](https://github.com/Binusha0826)
 
 ---
 
 <p align="center">
-  🇱🇰 <strong>Made with passion for Sri Lanka</strong>
-</p>
-
-<p align="center">
-  <strong>CEYLON ODYSSEY</strong><br/>
-  <i>Discover the Island. Experience the Extraordinary.</i>
+  🌴 <strong>CEYLON ODYSSEY</strong>
+  <br />
+  <em>One Island. Endless Discoveries.</em>
 </p>
