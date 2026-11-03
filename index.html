@@ -484,54 +484,46 @@
   </div>
 
   <!-- ============================================================
-       LUXURY FOOTER
+       COMPACT LUXURY FOOTER (Transparent Floating Glass)
        ============================================================ -->
   <footer class="site-footer">
-    <div class="footer-top">
-      <div>
-        <div class="nav-brand">
-          <div class="nav-logo-mark">SL</div>
-          <div class="nav-brand-text">CEYLON <span>ODYSSEY</span></div>
+    <div class="footer-container">
+      <div class="footer-glass-card">
+        <div class="footer-col-brand">
+          <div class="nav-brand">
+            <div class="nav-logo-mark">SL</div>
+            <div class="nav-brand-text">CEYLON <span>ODYSSEY</span></div>
+          </div>
+          <p class="footer-brand-desc">Curating bespoke cinematic journeys through the Pearl of the Indian Ocean.</p>
         </div>
-        <p class="footer-brand-desc">Curating bespoke cinematic journeys through the Pearl of the Indian Ocean. Ancient kingdoms, emerald highlands, and pristine tropical shores.</p>
+
+        <div class="footer-col-nav">
+          <span class="footer-nav-heading">Explore</span>
+          <div class="footer-quick-links">
+            <a href="#destinations">Destinations</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#culture">Culture</a>
+            <a href="#why-sri-lanka">Why Sri Lanka</a>
+            <a href="#plan-journey">Plan Journey</a>
+          </div>
+        </div>
+
+        <div class="footer-col-newsletter">
+          <span class="footer-nav-heading">Island Dispatch</span>
+          <form class="footer-compact-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Ceylon Odyssey!');">
+            <input type="email" class="footer-input" placeholder="Enter your email" required />
+            <button type="submit" class="footer-btn">Subscribe</button>
+          </form>
+        </div>
       </div>
 
-      <div>
-        <h4 class="footer-col-title">Destinations</h4>
-        <ul class="footer-links">
-          <li><a href="#destinations">Sigiriya Rock</a></li>
-          <li><a href="#destinations">Ella Highlands</a></li>
-          <li><a href="#destinations">Mirissa Coastline</a></li>
-          <li><a href="#destinations">Adam's Peak</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="footer-col-title">Experiences</h4>
-        <ul class="footer-links">
-          <li><a href="#experiences">Wildlife Safaris</a></li>
-          <li><a href="#experiences">Scenic Train Journeys</a></li>
-          <li><a href="#experiences">Beach Adventures</a></li>
-          <li><a href="#experiences">Tea Estate Tastings</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="footer-col-title">Travel Inspiration</h4>
-        <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;">Subscribe for curated seasonal guides, insider trails, and private villa recommendations.</p>
-        <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Ceylon Odyssey!');">
-          <input type="email" class="footer-input" placeholder="Your email address" required />
-          <button type="submit" class="footer-btn">Join</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div>© 2026 Ceylon Odyssey. All rights reserved. Crafted for extraordinary Sri Lankan travel.</div>
-      <div style="display: flex; gap: 20px;">
-        <a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
-        <a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Exploration</a>
-        <a href="#" style="color: var(--text-muted); text-decoration: none;">Contact Concierge</a>
+      <div class="footer-bottom-bar">
+        <span>© 2026 Ceylon Odyssey. All rights reserved. Crafted for extraordinary Sri Lankan travel.</span>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Travel</a>
+          <a href="#">Concierge</a>
+        </div>
       </div>
     </div>
   </footer>
